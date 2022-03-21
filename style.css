@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+/*============================= Section =======================*/
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+.section p {
+  font-size: 20px;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  width: 800px;
+}
+@media (max-width: 767px) {
+  .section h2,
+  .section p {
+    width: fit-content;
+  }
+}
+/*========================== Section End =======================*/
+
+.header {
+  display: grid;
+  place-items: center;
+  background-image: url(./images/bg-header-desktop.png);
+  height: 300px;
+}
+.header img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  z-index: 1;
+}
+/* ========================== Buttons ===========================*/
+.btns {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+.btns .right,
+.btns .left {
+  color: white;
+  background-color: hsl(233, 100%, 69%);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
+  box-shadow: 5px 5px 15px hsl(233, 100%, 69%);
+  cursor: pointer;
+}
+.btns .left {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 5px 5px 15px hsl(171, 66%, 44%);
+}
+@media (max-width: 767px) {
+  .btns {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+  }
+  .btns .left,
+  .btns .right {
+    width: calc(100% - 40px);
+  }
+}
+/* ======================== Buttons End =========================*/
+
+/* ======================== Landing  ===========================*/
+
+.landing {
+  padding-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 150px;
+  padding-bottom: 150px;
+}
+.landing .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
+.landing .txt div p {
+  color: hsl(201, 11%, 66%);
+  margin-top: 15px;
+  width: 400px;
+  line-height: 2;
+}
+@media (max-width: 767px) {
+  .landing {
+    grid-template-columns: auto;
+    place-items: center;
+    gap: 50px;
+  }
+  .landing img {
+    max-width: calc(100% - 20px);
+  }
+  .landing .txt {
+    text-align: center;
+  }
+  .landing .txt div p {
+    text-align: center;
+  }
+}
+/* ======================== Landing End =========================*/
+
+.image {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 767px) {
+  .image img {
+    max-width: 100%;
+  }
+}
+
+.sctn {
+  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  height: 400px;
+}
+.sctn .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sctn .box p {
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  width: 350px;
+  line-height: 2;
+}
+.sctn .box img {
+  width: 50px;
+}
+@media (max-width: 767px) {
+  .sctn {
+    height: fit-content;
+    grid-template-columns: 1fr;
+    padding-bottom: 80px;
+    justify-content: center;
+  }
+  .sctn .box {
+    gap: 35px;
+  }
+}
+.companies {
+  padding: 150px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+.companies img {
+  width: 200px;
+}
+@media (max-width: 767px) {
+  .companies {
+    gap: 50px;
+    padding: 35px 10px 150px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .companies img {
+    width: fit-content;
+  }
+}
+.bottom {
+  padding: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.bottom .logo img {
+  width: 80px;
+}
+
+.bottom .links ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  gap: 40px;
+  color: hsl(210, 10%, 33%);
+}
+.bottom .links ul li {
+  font-size: 18px;
+}
+.bottom .links ul li:hover {
+  color: hsl(171, 66%, 44%);
+  transition: 0.5s;
+}
+
+.bottom .social {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.bottom .social img {
+  width: 30px;
+  height: 30px;
+}
+.bottom .social a:hover img {
+  background-color: hsl(171, 66%, 44%);
+  transition: 0.5s;
+}
+@media (max-width: 767px) {
+  .bottom {
+    flex-direction: column;
+    padding: 150px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom .social {
+    gap: 55px;
+  }
+}
+
+.footer {
+  height: 100px;
+  background-color: wheat;
+}
